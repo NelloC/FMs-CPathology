@@ -1,0 +1,7 @@
+**/risultati*/
+**/model_lib/
+*.pth
+*.bin
+*.tar
+.DS_Store
+**/__pycache__/
