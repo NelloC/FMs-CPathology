@@ -4,27 +4,27 @@ This repository contains the official code and evaluation benchmark for the pape
 
 ## Overview
 
-Vision Foundation Models (VFMs) are rapidly transforming computational pathology by replacing task-specific convolutional networks with generalist backbones trained via self-supervised learning[cite: 1]. However, independent evidence evaluating these models across heterogeneous diagnostic tasks remains limited[cite: 1]. 
+Vision Foundation Models (VFMs) are rapidly transforming computational pathology by replacing task-specific convolutional networks with generalist backbones trained via self-supervised learning. However, independent evidence evaluating these models across heterogeneous diagnostic tasks remains limited. 
 
-This project benchmarks five representative pathology VFMs to quantify the trade-offs between model scale, downstream diagnostic performance, and computational efficiency[cite: 1]. We evaluate these models across a novel, clinically motivated taxonomy covering eight public datasets[cite: 1]:
-*   **Categorical Tissue Phenotyping:** BACH, BreaKHis, NCT-CRC, HUBMAP, LC25000[cite: 1].
-*   **Ordinal Prognostic Grading:** PANDA, BRACS, SICAPv2[cite: 1].
+This project benchmarks five representative pathology VFMs to quantify the trade-offs between model scale, downstream diagnostic performance, and computational efficiency. We evaluate these models across a novel, clinically motivated taxonomy covering eight public datasets:
+*   **Categorical Tissue Phenotyping:** BACH, BreaKHis, NCT-CRC, HUBMAP, LC25000.
+*   **Ordinal Prognostic Grading:** PANDA, BRACS, SICAPv2.
 
 ## Evaluated Foundation Models
 
-The benchmark evaluates the frozen embeddings of the following architectures using a standardized linear-probing pipeline[cite: 1]:
+The benchmark evaluates the frozen embeddings of the following architectures using a standardized linear-probing pipeline:
 
 | Model | Architecture | Parameters | Pre-training Data | Availability |
 | :--- | :--- | :--- | :--- | :--- |
-| **UNI**[cite: 1] | ViT-L/14[cite: 1] | 307M[cite: 1] | 100K WSIs[cite: 1] | Gated[cite: 1] |
-| **Virchow2**[cite: 1] | ViT-H/14[cite: 1] | 632M[cite: 1] | 3.1M WSIs[cite: 1] | Gated[cite: 1] |
-| **CONCH**[cite: 1] | ViT-B/16[cite: 1] | ~200M[cite: 1] | Reports + Patches[cite: 1] | Gated[cite: 1] |
-| **Phikon**[cite: 1] | ViT-B/16[cite: 1] | 86M[cite: 1] | TCGA[cite: 1] | Open[cite: 1] |
-| **CTransPath**[cite: 1] | Swin-T[cite: 1] | 28M[cite: 1] | 32K WSIs[cite: 1] | Open[cite: 1] |
+| **UNI** | ViT-L/14 | 307M | 100K WSIs| Gated |
+| **Virchow2** | ViT-H/14 | 632M | 3.1M WSIs | Gated|
+| **CONCH**| ViT-B/16 | ~200M | Reports + Patches | Gated |
+| **Phikon** | ViT-B/16 | 86M| TCGA | Open |
+| **CTransPath** | Swin-T | 28M | 32K WSIs| Open |
 
 ## Repository Structure
 
-The repository is logically divided into independent modules based on the evaluation pipelines. Scripts can be executed in any order[cite: 1]:
+The repository is logically divided into independent modules based on the evaluation pipelines. Scripts can be executed in any order:
 
 *   `comparison/`
     *   `BACH_train_10_epochs.ipynb`
