@@ -37,19 +37,19 @@ This repository provides a reproducible benchmark of **five representative patho
 
 ```
 FMs-CPathology/
-├── comparison/                   # Single-task baseline notebooks (Table III)
+├── comparison/                   
 │   ├── BACH_train_10_epochs.ipynb
 │   ├── PANDA_train_10_epochs.ipynb
-│   ├── break_10_epochs.ipynb     # BreaKHis
+│   ├── break_10_epochs.ipynb     
 │   ├── hubmap_train_10_epochs.ipynb
 │   ├── lc2500_10_epochs.ipynb
 │   └── nct_train_10_epochs.ipynb
-├── multiple/                     # Simultaneous multi-task pipelines (Tables IV–V)
+├── multiple/                     
 │   ├── categorical/
 │   │   └── multiple_categorical.py
 │   └── ordinal_grading/
 │       └── multiple_ordinal.py
-├── quantization/                 # Hardware efficiency & reduced-precision inference (Table VI)
+├── quantization/                 
 │   └── quantization.py
 └── .gitignore
 ```
@@ -79,26 +79,25 @@ pip install -r requirements.txt
 
 All datasets used in this benchmark are publicly available. Download them from their respective sources and place them under a `data/` directory:
 
-| Dataset | Task | Source |
-| :--- | :--- | :--- |
-| NCT-CRC-HE-100K | Colorectal phenotyping | [Zenodo](https://zenodo.org/record/1214456) |
-| HuBMAP | Multi-organ segmentation | [Kaggle](https://kaggle.com/competitions/hubmap-organ-segmentation) |
-| BACH | Breast cancer classification | [ICIAR 2018](https://iciar2018-challenge.grand-challenge.org/) |
-| BreaKHis | Breast tumor classification | [Kaggle](https://www.kaggle.com/datasets/ambarish/breakhis) |
-| LC25000 | Lung cancer classification | [arXiv](https://arxiv.org/abs/1912.12142) |
-| PANDA | Prostate Gleason grading | [Kaggle](https://www.kaggle.com/c/prostate-cancer-grade-assessment) |
-| BRACS | Breast atypia subtyping | [Official site](https://www.bracs.icar.cnr.it/) |
-| SICAPv2 | Prostate Gleason grading | [Official site](https://data.mendeley.com/datasets/9xxm58dvs3) |
+| Dataset | Task |
+| :--- | :--- |
+| NCT-CRC-HE-100K | Colorectal phenotyping |
+| HuBMAP | Multi-organ segmentation | 
+| BACH | Breast cancer classification | 
+| BreaKHis | Breast tumor classification | 
+| LC25000 | Lung cancer classification | 
+| PANDA | Prostate Gleason grading | 
+| BRACS | Breast atypia subtyping | 
+| SICAPv2 | Prostate Gleason grading | 
 
 All patches are extracted at **20× magnification**, resized to **224×224 pixels**, and normalized using standard ImageNet statistics.
 
-> For PANDA, the benchmark uses a stratified 25% subsample for multi-task evaluation (Table V) to maintain scale parity with other datasets. The single-task baseline (Table III) uses the full cohort.
 
 ---
 
 ## Usage
 
-### 1. Single-Task Baselines (Table III)
+### 1. Single-Task Baselines 
 
 Individual Jupyter notebooks under `comparison/` reproduce the single-task frozen linear-probing results for each dataset:
 
@@ -106,21 +105,21 @@ Individual Jupyter notebooks under `comparison/` reproduce the single-task froze
 jupyter notebook comparison/BACH_train_10_epochs.ipynb
 ```
 
-### 2. Simultaneous Multi-Task Learning (Tables IV–V)
+### 2. Simultaneous Multi-Task Learning 
 
 To evaluate a frozen backbone across multiple tasks concurrently (categorical or ordinal):
 
 ```bash
-# Categorical benchmark (Table IV)
+# Categorical benchmark 
 python multiple/categorical/multiple_categorical.py --model uni
 
-# Ordinal grading benchmark (Table V)
+# Ordinal grading benchmark 
 python multiple/ordinal_grading/multiple_ordinal.py --model virchow2
 ```
 
 Available `--model` options: `uni`, `virchow2`, `conch`, `phikon`, `ctranspath`
 
-### 3. Quantization Benchmark (Table VI)
+### 3. Quantization Benchmark 
 
 To reproduce the FP32 / FP16 / INT8 precision comparison:
 
@@ -128,12 +127,5 @@ To reproduce the FP32 / FP16 / INT8 precision comparison:
 python quantization/quantization.py --model phikon
 ```
 
----
 
-## Key Findings
-
-- **Categorical tasks:** Massive unimodal models (UNI, Virchow2) maintain macro-average AUC > 0.99 across five distinct tissue types under simultaneous multi-task training, demonstrating strong resistance to catastrophic forgetting.
-- **Ordinal grading:** Frozen patch-level representations collapse on WSI-derived grading tasks (PANDA) due to global-to-local label noise. Clean RoI datasets (BRACS, SICAPv2) do not exhibit this failure. Addressing PANDA-style label noise requires spatial aggregation frameworks (e.g., ABMIL, CLAM) rather than linear probing.
-- **Positive transfer:** Co-training on related breast tissue tasks (BACH + BreaKHis) yields a +8.84% accuracy gain for UNI on BACH compared to single-task isolation.
-- **Quantization resilience:** High-parameter unimodal models tolerate INT8 CPU quantization with negligible accuracy degradation on categorical tasks, making them viable for resource-constrained clinical deployment.
 
