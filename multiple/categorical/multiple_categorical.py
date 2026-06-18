@@ -192,26 +192,49 @@ if __name__ == '__main__':
             embed_dim = 2048
 
         elif MODEL_TO_RUN == "ctranspath":
-            def to_2tuple(x): return tuple(x) if isinstance(x, (tuple, list)) else (x, x)
-            class ConvStem(nn.Module):
-                def __init__(self, img_size=224, patch_size=4, in_chans=3, embed_dim=96, norm_layer=None):
+                    class ConvStem(nn.Module):
+                        def __init__(self, img_size=224, patch_size=4, in_chans=3, embed_dim=96, norm_layer=None):
+                            super().__init__()
+                            self.proj = nn.Sequential(
+                                nn.Conv2d(in_chans, embed_dim // 2, kernel_size=3, stride=2, padding=1),
+                                nn.BatchNorm2d(embed_dim // 2), nn.ReLU(inplace=True),
+                                nn.Conv2d(embed_dim // 2, embed_dim, kernel_size=3, stride=2, padding=1),
+                                nn.BatchNorm2d(embed_dim), nn.ReLU(inplace=True),
+                            )
+                        def forward(self, x): return self.proj(x).permute(0, 2, 3, 1)
+
+                    backbone = timm.create_model("swin_tiny_patch4_window7_224", pretrained=False, embed_dim=96)
+                    backbone.patch_embed = ConvStem(img_size=224, patch_size=4, in_chans=3, embed_dim=96, norm_layer=nn.LayerNorm)
+                    backbone.head = nn.Identity()
+                    
+                    CTRANSPATH_WEIGHTS = "/Users/aconelli/TechConnect/FundationalModels/multiple_learning/model_lib/pretrained/ctranspath.pth" 
+                    
+                    if os.path.exists(CTRANSPATH_WEIGHTS):
+                        ckpt = torch.load(CTRANSPATH_WEIGHTS, map_location="cpu")
+                        state_dict = ckpt['model'] if 'model' in ckpt else ckpt
+                        
+                        model_dict = backbone.state_dict()
+                        pretrained_dict = {k: v for k, v in state_dict.items() if k in model_dict and v.shape == model_dict[k].shape}
+                        
+                        backbone.load_state_dict(pretrained_dict, strict=False)
+                    else:
+                        raise ValueError(f"Weights CTransPath not found in {CTRANSPATH_WEIGHTS}")
+                    
+                    # 3. Lo Swin-Tiny sputa fuori vettori di dimensione 768 alla fine
+                    embed_dim = 768
+
+       elif MODEL_TO_RUN == "phikon":
+            from transformers import ViTModel
+            base_vit = ViTModel.from_pretrained("owkin/phikon", add_pooling_layer=False)
+            
+            class PhikonWrapper(nn.Module):
+                def __init__(self, vit_model):
                     super().__init__()
-                    self.proj = nn.Sequential(
-                        nn.Conv2d(in_chans, embed_dim // 2, kernel_size=3, stride=2, padding=1),
-                        nn.BatchNorm2d(embed_dim // 2), nn.ReLU(inplace=True),
-                        nn.Conv2d(embed_dim // 2, embed_dim, kernel_size=3, stride=2, padding=1),
-                        nn.BatchNorm2d(embed_dim), nn.ReLU(inplace=True),
-                    )
-                def forward(self, x): return self.proj(x).permute(0, 2, 3, 1)
-
-            backbone = timm.create_model("swin_tiny_patch4_window7_224", pretrained=False, embed_dim=128, depths=[2, 2, 18, 2], num_heads=[4, 8, 16, 32])
-            backbone.patch_embed = ConvStem(img_size=224, patch_size=4, in_chans=3, embed_dim=128, norm_layer=nn.LayerNorm)
-            backbone.head = nn.Identity()
-            embed_dim = 768
-
-        elif MODEL_TO_RUN == "phikon":
-            try: backbone = timm.create_model("hf_hub:owkin/phikon", pretrained=True, num_classes=0)
-            except: backbone = timm.create_model("vit_base_patch16_224", pretrained=True, num_classes=0)
+                    self.model = vit_model
+                def forward(self, x):
+                    return self.model(x, return_dict=False)[0] 
+                    
+            backbone = PhikonWrapper(base_vit)
             embed_dim = 768
 
         elif MODEL_TO_RUN == "uni":
