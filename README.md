@@ -38,12 +38,12 @@ This repository provides a reproducible benchmark of **five representative patho
 ```
 FMs-CPathology/
 ├── comparison/                   
-│   ├── BACH_train_10_epochs.ipynb
-│   ├── PANDA_train_10_epochs.ipynb
-│   ├── break_10_epochs.ipynb     
-│   ├── hubmap_train_10_epochs.ipynb
-│   ├── lc2500_10_epochs.ipynb
-│   └── nct_train_10_epochs.ipynb
+│   ├── BACH_train_10_epochs.py
+│   ├── PANDA_train_10_epochs.py
+│   ├── break_10_epochs.py    
+│   ├── hubmap_train_10_epochs.py
+│   ├── lc2500_10_epochs.py
+│   └── nct_train_10_epochs.py
 ├── multiple/                     
 │   ├── categorical/
 │   │   └── multiple_categorical.py
