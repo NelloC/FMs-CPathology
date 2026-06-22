@@ -36,10 +36,12 @@ SUBSAMPLE_FRAC = {
     "sicap": 1.0
 }
 
+BASE_DIR = "./data"
+
 DIRS = {
-    "PANDA": "/Users/aconelli/TechConnect/FundationalModels/dataset/PANDA_TILED_TIFF", 
-    "BRACS": "/Users/aconelli/TechConnect/FundationalModels/dataset/BRACS/histoimage.na.icar.cnr.it/BRACS_RoI/latest_version/train",
-    "SICAP": "/Users/aconelli/TechConnect/FundationalModels/dataset/SICAPv2_Formatted"
+    "PANDA": f"{BASE_DIR}/PANDA/PANDA_TILED_TIFF", 
+    "BRACS": f"{BASE_DIR}/BRACS/train",
+    "SICAP": f"{BASE_DIR}/SICAPv2_Formatted"
 }
 
 task_mapping = {
