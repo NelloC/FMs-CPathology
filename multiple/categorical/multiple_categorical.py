@@ -182,7 +182,7 @@ if __name__ == '__main__':
     for MODEL_TO_RUN in MODELS_TO_RUN:
 
 
-        SAVE_DIR = f"./risultati_finali_pancancer/{MODEL_TO_RUN}"
+        SAVE_DIR = f"./final_results_categorical/{MODEL_TO_RUN}"
         os.makedirs(SAVE_DIR, exist_ok=True)
 
 
