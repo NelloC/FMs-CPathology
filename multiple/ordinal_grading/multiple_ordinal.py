@@ -242,7 +242,7 @@ if __name__ == '__main__':
             backbone = timm.create_model("swin_tiny_patch4_window7_224", pretrained=False, embed_dim=128, depths=[2, 2, 18, 2], num_heads=[4, 8, 16, 32])
             backbone.patch_embed = ConvStem(img_size=224, patch_size=4, in_chans=3, embed_dim=128, norm_layer=nn.LayerNorm)
             
-            CTRANSPATH_WEIGHTS = "./model_lib/pretrained/ctranspath.pth" 
+            CTRANSPATH_WEIGHTS = "./weights/ctranspath.pth"
             if os.path.exists(CTRANSPATH_WEIGHTS):
                 ckpt = torch.load(CTRANSPATH_WEIGHTS, map_location="cpu")
                 backbone.load_state_dict(ckpt['model'] if 'model' in ckpt else ckpt, strict=False)
