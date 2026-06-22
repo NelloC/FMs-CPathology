@@ -15,15 +15,15 @@ MODELS_TO_RUN = ["phikon","ctranspath"]
 BATCH_SIZE = 8       
 NUM_WORKERS = 0       
 
-SAVE_DIR = "./results_quantization_final_3"
+SAVE_DIR = "./results_quantization_final"
 os.makedirs(SAVE_DIR, exist_ok=True)
 
-BASE_DIR = "/Users/aconelli/TechConnect/FundationalModels/dataset"
+BASE_DIR = "./data"
 DIRS = {
-    "TCGA_LUNG": f"{BASE_DIR}/TGCA/lung_colon_image_set/Train and Validation Set",
-    "BREAKHIS": f"{BASE_DIR}/BreakHis - Breast Cancer Histopathological Database/dataset_cancer_v1/dataset_cancer_v1/classificacao_binaria",
+    "TCGA_LUNG": f"{BASE_DIR}/TCGA-LUSC/lung_colon_image_set",
+    "BREAKHIS": f"{BASE_DIR}/BreaKHis",
     "NCT_COLON": f"{BASE_DIR}/NCT-CRC-HE-100K",
-    "HUBMAP": f"{BASE_DIR}/HUBMAP_TILED_TIFF",
+    "HUBMAP": f"{BASE_DIR}/HuBMAP/HUBMAP_TILED_TIFF",
     "BACH": f"{BASE_DIR}/BACH/TILED_TIFF"
 }
 
@@ -214,7 +214,7 @@ for current_model in MODELS_TO_RUN:
                     backbone.patch_embed = ConvStem(img_size=224, patch_size=4, in_chans=3, embed_dim=96, norm_layer=nn.LayerNorm)
                     backbone.head = nn.Identity()
                     
-                    CTRANSPATH_WEIGHTS = "/Users/aconelli/TechConnect/FundationalModels/multiple_learning/model_lib/pretrained/ctranspath.pth" 
+                    CTRANSPATH_WEIGHTS = "./weights/ctranspath.pth"
                     
                     if os.path.exists(CTRANSPATH_WEIGHTS):
                         ckpt = torch.load(CTRANSPATH_WEIGHTS, map_location="cpu")
