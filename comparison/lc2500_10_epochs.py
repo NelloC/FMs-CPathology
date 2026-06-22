@@ -28,9 +28,9 @@ LR = 1e-4
 NUM_CLASSES = 2  
 NUM_WORKERS = 0  
 
-BASE_DIR = "/home/nelloconelli/Escritorio/FOUNDATION MODELS/TGCA/TGCA-LUSC/lung_colon_image_set"
+BASE_DIR = "./data/TCGA-LUSC/lung_colon_image_set"
 
-MAIN_SAVE_DIR = "./risultati_finali_lung_multimodel"
+MAIN_SAVE_DIR = "./results_multi_task/lung"
 os.makedirs(MAIN_SAVE_DIR, exist_ok=True)
 
 device = torch.device("cuda" if torch.cuda.is_available() else "mps" if torch.backends.mps.is_available() else "cpu")
