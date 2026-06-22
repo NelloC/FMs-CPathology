@@ -253,7 +253,7 @@ for current_model_name in MODELS_TO_RUN:
     model = model.to(device)
     optimizer = optim.Adam(filter(lambda p: p.requires_grad, model.parameters()), lr=LR)
 
-    print(f"\n🔥 START TRAINING {current_model_name.upper()}: {len(train_loader)} batch train, {len(val_loader)} batch val")
+    print(f"\n START TRAINING {current_model_name.upper()}: {len(train_loader)} batch train, {len(val_loader)} batch val")
     history = {'epochs': [], 'loss': [], 'val_acc': [], 'time': []} 
     best_acc = 0.0
 
