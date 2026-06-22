@@ -37,7 +37,7 @@ This repository provides a reproducible benchmark of **five representative patho
 
 ```
 FMs-CPathology/
-├── comparison/                   
+├── Single/                   
 │   ├── BACH_train_10_epochs.py
 │   ├── PANDA_train_10_epochs.py
 │   ├── break_10_epochs.py    
@@ -105,10 +105,10 @@ All patches are extracted at **20× magnification**, resized to **224×224 pixel
 
 ### 1. Single-Task Baselines 
 
-Individual Jupyter notebooks under `comparison/` reproduce the single-task frozen linear-probing results for each dataset:
+Individual python scripts under `Single/` reproduce the single-task frozen linear-probing results for each dataset:
 
 ```bash
-jupyter notebook comparison/BACH_train_10_epochs.ipynb
+python Single/BACH_train_10_epochs.py
 ```
 
 ### 2. Simultaneous Multi-Task Learning 
