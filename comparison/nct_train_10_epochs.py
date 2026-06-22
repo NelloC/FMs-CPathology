@@ -33,10 +33,9 @@ EPOCHS = 10
 LR = 1e-4
 NUM_CLASSES = 9             
 
-# PERCORSI
-TILES_DIR = "/home/nelloconelli/Escritorio/FOUNDATION MODELS/NCT-CRC-HE/NCT-CRC-HE-100K"
-SAVE_DIR = "./risultati_finali_nct"
-CTRANSPATH_WEIGHTS = "./model_lib/pretrained/ctranspath.pth"
+TILES_DIR = "./data/NCT-CRC-HE-100K"
+SAVE_DIR = "./results_single_task/nct"
+CTRANSPATH_WEIGHTS = "./weights/ctranspath.pth"
 
 Image.MAX_IMAGE_PIXELS = None
 os.makedirs(SAVE_DIR, exist_ok=True)
