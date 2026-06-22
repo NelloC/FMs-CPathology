@@ -28,11 +28,11 @@ LR = 1e-4
 NUM_CLASSES = 5
 EPOCHS = 10
 
-HUBMAP_BASE_DIR = "/home/nelloconelli/Escritorio/FOUNDATION MODELS/HUBMAP"
+HUBMAP_BASE_DIR = "./data/HuBMAP"
 CSV_PATH = os.path.join(HUBMAP_BASE_DIR, "train.csv")
 TILES_DIR = os.path.join(HUBMAP_BASE_DIR, "HUBMAP_TILED_TIFF")
-SAVE_DIR = "./risultati_finali_hubmap"
-CTRANSPATH_WEIGHTS = "./model_lib/pretrained/ctranspath.pth"
+SAVE_DIR = "./results_single_task/hubmap"
+CTRANSPATH_WEIGHTS = "./weights/ctranspath.pth"
 
 Image.MAX_IMAGE_PIXELS = None
 os.makedirs(SAVE_DIR, exist_ok=True)
