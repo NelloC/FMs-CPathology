@@ -15,7 +15,7 @@ MODELS_TO_RUN = ["phikon","ctranspath"]
 BATCH_SIZE = 8       
 NUM_WORKERS = 0       
 
-SAVE_DIR = "./results_quantization_final"
+SAVE_DIR = "./results_quantization"
 os.makedirs(SAVE_DIR, exist_ok=True)
 
 BASE_DIR = "./data"
