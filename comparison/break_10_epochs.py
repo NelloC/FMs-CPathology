@@ -27,9 +27,9 @@ EPOCHS = 10
 LR = 1e-4
 NUM_CLASSES = 2
 
-BASE_DIR = "/home/nelloconelli/Escritorio/FOUNDATION MODELS/BreakHis - Breast Cancer Histopathological Database"
-SAVE_DIR = "./risultati_finali_breakhis"
-CTRANSPATH_WEIGHTS = "./model_lib/pretrained/ctranspath.pth"
+BASE_DIR = "./data/BreaKHis"
+SAVE_DIR = "./results_single_task/breakhis"
+CTRANSPATH_WEIGHTS = "./weights/ctranspath.pth"
 
 os.makedirs(SAVE_DIR, exist_ok=True)
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
