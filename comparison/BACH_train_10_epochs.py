@@ -28,10 +28,12 @@ EPOCHS = 10
 LR = 1e-4
 NUM_CLASSES = 4 
 
-TILES_DIR = "/home/nelloconelli/Escritorio/FOUNDATION MODELS/BACH/TILED_TIFF"
-CSV_PATH = "/home/nelloconelli/Escritorio/FOUNDATION MODELS/BACH/ICIAR2018_BACH_Challenge/ICIAR2018_BACH_Challenge/Photos/microscopy_ground_truth.csv"
-SAVE_DIR = "./risultati_finali_bach"
-CTRANSPATH_WEIGHTS = "./model_lib/pretrained/ctranspath.pth"
+BASE_DATA_DIR = "./data/BACH" 
+TILES_DIR = os.path.join(BASE_DATA_DIR, "TILED_TIFF")
+CSV_PATH = os.path.join(BASE_DATA_DIR, "microscopy_ground_truth.csv")
+SAVE_DIR = "./results_single_task/bach"
+
+CTRANSPATH_WEIGHTS = "./weights/ctranspath.pth"
 
 Image.MAX_IMAGE_PIXELS = None
 os.makedirs(SAVE_DIR, exist_ok=True)
