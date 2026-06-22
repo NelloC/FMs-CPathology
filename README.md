@@ -71,8 +71,14 @@ Install dependencies (ensure your PyTorch build matches your CUDA version):
 pip install -r requirements.txt
 ```
 
-**Hardware used in the paper:** NVIDIA GeForce RTX 4090 (GPU benchmarks) and Apple Silicon M3 (CPU/INT8 benchmarks).
+Hugging Face Authentication:
+Models like UNI, Virchow2, and CONCH are gated. You must request access on their respective Hugging Face/PhysioNet pages. Once granted, log in via your terminal before running the scripts:
 
+```bash
+huggingface-cli login
+```
+
+**Hardware used in the paper:** NVIDIA GeForce RTX 4090 (GPU benchmarks) and Apple Silicon M3 (CPU/INT8 benchmarks).
 ---
 
 ## Dataset Preparation
