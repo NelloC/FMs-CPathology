@@ -185,7 +185,7 @@ if __name__ == '__main__':
         print(f"INITIALIZING MODEL: {current_model_name.upper()}")
         print("="*60)
 
-        SAVE_DIR = f"./risultati_ordinali_v3/{current_model_name}_{QUANTIZATION_LEVEL}"
+        SAVE_DIR = f"./ordinal_results/{current_model_name}_{QUANTIZATION_LEVEL}"
         os.makedirs(SAVE_DIR, exist_ok=True)
 
         if current_model_name == "uni":
