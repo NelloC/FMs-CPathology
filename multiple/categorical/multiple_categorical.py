@@ -31,7 +31,7 @@ NUM_WORKERS = 0
 EPOCHS = 10
 LR = 1e-4
 
-BASE_DIR = "/Users/aconelli/TechConnect/FundationalModels/dataset"
+BASE_DIR = "./data"
 
 DIRS = {
     "TCGA_LUNG": f"{BASE_DIR}/TGCA/lung_colon_image_set/Train and Validation Set", 
@@ -207,7 +207,7 @@ if __name__ == '__main__':
                     backbone.patch_embed = ConvStem(img_size=224, patch_size=4, in_chans=3, embed_dim=96, norm_layer=nn.LayerNorm)
                     backbone.head = nn.Identity()
                     
-                    CTRANSPATH_WEIGHTS = "/Users/aconelli/TechConnect/FundationalModels/multiple_learning/model_lib/pretrained/ctranspath.pth" 
+                    CTRANSPATH_WEIGHTS = "./weights/ctranspath.pth" 
                     
                     if os.path.exists(CTRANSPATH_WEIGHTS):
                         ckpt = torch.load(CTRANSPATH_WEIGHTS, map_location="cpu")
