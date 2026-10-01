@@ -45,3 +45,23 @@ python pipeline/extract.py --models hoptimus0 gigapath --datasets breakhis lung 
 python pipeline/probe.py --models hoptimus0 gigapath --datasets breakhis lung bach hubmap sicap nct panda bracs
 python pipeline/report.py --models $M --out generated
 ```
+
+## Tables and figures
+Written by `pipeline/report.py` to `generated/`:
+
+| Item | File |
+|---|---|
+| Table III | `tables/performance_benchmark.tex` |
+| Table IV | `tables/precision_summary.tex` |
+| Fig. 1 | `figures/overview.pdf` |
+| Fig. 3 | `figures/accuracy_barchart.pdf` |
+| Fig. 4 | `figures/qwk_heatmap.pdf` |
+| Fig. 5 | `figures/cd_all.pdf` |
+| Fig. 6 | `figures/qualitative.pdf` |
+| Fig. 7 | `figures/precision_latency.pdf` |
+| Tables S1–S2 | `tables/results_categorical.tex`, `tables/results_ordinal.tex` |
+| Table S3 | `tables/rank_stability.tex` |
+| Table S4 | `tables/abmil_panda.tex` |
+| Table S5 | `tables/embedding_sensitivity.tex` |
+| Table S6 | `tables/precision_timing.tex` |
+| Table S7 | `tables/additional_models.tex` (H-optimus-0, Prov-GigaPath) |
