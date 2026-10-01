@@ -1,0 +1,88 @@
+{
+  "classes": {
+    "lung_aca": {
+      "candidate_pairs": 91519,
+      "candidate_pairs_keypoints": 22963,
+      "candidate_pairs_thumbnail_only": 68556,
+      "group_size_quantiles": {
+        "0": 1.0,
+        "100": 62.0,
+        "25": 16.0,
+        "5": 9.0,
+        "50": 20.0,
+        "75": 24.0,
+        "95": 38.0
+      },
+      "groups": 241,
+      "images": 5000,
+      "images_per_folder": {
+        "Test Set": 500,
+        "Train and Validation Set": 4500
+      },
+      "inlier_histogram": {
+        "0-4": 63267,
+        "10-14": 244,
+        "100-999999": 17048,
+        "15-19": 402,
+        "20-29": 1193,
+        "30-49": 2626,
+        "5-9": 743,
+        "50-99": 5996
+      },
+      "seconds": 803.0,
+      "singletons": 6,
+      "test_folder_groups": 206,
+      "test_folder_groups_also_in_train_val": 206,
+      "test_folder_images_in_shared_groups": 500,
+      "verified_pairs": 27265
+    },
+    "lung_scc": {
+      "candidate_pairs": 94575,
+      "candidate_pairs_keypoints": 22752,
+      "candidate_pairs_thumbnail_only": 71823,
+      "group_size_quantiles": {
+        "0": 1.0,
+        "100": 54.0,
+        "25": 16.0,
+        "5": 2.0,
+        "50": 20.0,
+        "75": 23.0,
+        "95": 34.0
+      },
+      "groups": 251,
+      "images": 5000,
+      "images_per_folder": {
+        "Test Set": 499,
+        "Train and Validation Set": 4501
+      },
+      "inlier_histogram": {
+        "0-4": 68014,
+        "10-14": 180,
+        "100-999999": 16000,
+        "15-19": 300,
+        "20-29": 988,
+        "30-49": 2586,
+        "5-9": 682,
+        "50-99": 5825
+      },
+      "seconds": 795.7,
+      "singletons": 8,
+      "test_folder_groups": 203,
+      "test_folder_groups_also_in_train_val": 201,
+      "test_folder_images_in_shared_groups": 497,
+      "verified_pairs": 25699
+    }
+  },
+  "method": ", independent of the models being benchmarked:\n  1. SIFT keypoints on every image (grayscale, 384 px) and on its horizontal mirror (with rotation, a mirror\n     covers every flip); descriptors are RootSIFT.\n  2. Candidates: every descriptor of an image (both orientations) votes for the image holding its nearest\n     descriptor (Lowe ratio test); image pairs with enough votes are candidates. The ratio test rejects\n     descriptors with several identical copies, so each image's nearest neighbours by a small grayscale\n     thumbnail, compared under all eight rotations by 90 degrees and flips, are added as candidates.\n  3. Verification: RANSAC similarity transform (rotation + scale + translation) between the two keypoint\n     sets; a pair with >= MIN_INLIERS inliers comes from the same original.\n  4. Groups = connected components of the verified pairs, per class. Classes are never merged.\nThe \"Test Set\" folder is included so its overlap with \"Train and Validation Set\" can be reported.",
+  "params": {
+    "max_candidates": 30,
+    "min_inliers": 15,
+    "min_votes": 6,
+    "n_features": 300,
+    "opencv": "5.0.0",
+    "ratio": 0.8,
+    "size": 384,
+    "thumb_neighbours": 20,
+    "thumb_size": 32
+  }
+}

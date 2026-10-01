@@ -1,0 +1,1901 @@
+{
+  "_duplicate_files": {
+    "bach": 0,
+    "bracs": 0,
+    "breakhis": 125,
+    "hubmap": 21,
+    "lung": 463,
+    "nct": 0,
+    "nct_val7k": 0,
+    "panda": 186850,
+    "sicap": 0
+  },
+  "conch": {
+    "bach": {
+      "all_finite": true,
+      "duplicate_embeddings": 0,
+      "duplicate_image_files": 0,
+      "index_hash_ok": true,
+      "keys": {
+        "cls": [
+          19051,
+          768
+        ],
+        "official": [
+          19051,
+          512
+        ],
+        "patch_mean": [
+          19051,
+          768
+        ]
+      },
+      "n_index": 19051,
+      "ok": true,
+      "recompute_max_abs_diff": 1.1920928955078125e-06,
+      "recompute_rel_diff": 3.430915569424542e-07,
+      "rows_complete_and_ordered": true,
+      "subset": 0,
+      "zero_rows": 0
+    },
+    "bracs": {
+      "all_finite": true,
+      "duplicate_embeddings": 0,
+      "duplicate_image_files": 0,
+      "index_hash_ok": true,
+      "keys": {
+        "cls": [
+          4539,
+          768
+        ],
+        "official": [
+          4539,
+          512
+        ],
+        "patch_mean": [
+          4539,
+          768
+        ]
+      },
+      "n_index": 4539,
+      "ok": true,
+      "recompute_max_abs_diff": 9.5367431640625e-07,
+      "recompute_rel_diff": 2.4944915821834e-07,
+      "rows_complete_and_ordered": true,
+      "subset": 0,
+      "zero_rows": 0
+    },
+    "breakhis": {
+      "all_finite": true,
+      "duplicate_embeddings": 125,
+      "duplicate_image_files": 125,
+      "index_hash_ok": true,
+      "keys": {
+        "cls": [
+          7909,
+          768
+        ],
+        "official": [
+          7909,
+          512
+        ],
+        "patch_mean": [
+          7909,
+          768
+        ]
+      },
+      "n_index": 7909,
+      "ok": true,
+      "recompute_max_abs_diff": 9.5367431640625e-07,
+      "recompute_rel_diff": 2.377673951059478e-07,
+      "rows_complete_and_ordered": true,
+      "subset": 0,
+      "zero_rows": 0
+    },
+    "hubmap": {
+      "all_finite": true,
+      "duplicate_embeddings": 21,
+      "duplicate_image_files": 21,
+      "index_hash_ok": true,
+      "keys": {
+        "cls": [
+          29401,
+          768
+        ],
+        "official": [
+          29401,
+          512
+        ],
+        "patch_mean": [
+          29401,
+          768
+        ]
+      },
+      "n_index": 29401,
+      "ok": true,
+      "recompute_max_abs_diff": 9.5367431640625e-07,
+      "recompute_rel_diff": 2.45728614345353e-07,
+      "rows_complete_and_ordered": true,
+      "subset": 0,
+      "zero_rows": 0
+    },
+    "lung": {
+      "all_finite": true,
+      "duplicate_embeddings": 462,
+      "duplicate_image_files": 463,
+      "index_hash_ok": true,
+      "keys": {
+        "cls": [
+          9001,
+          768
+        ],
+        "official": [
+          9001,
+          512
+        ],
+        "patch_mean": [
+          9001,
+          768
+        ]
+      },
+      "n_index": 9001,
+      "ok": true,
+      "recompute_max_abs_diff": 9.5367431640625e-07,
+      "recompute_rel_diff": 2.525898707972374e-07,
+      "rows_complete_and_ordered": true,
+      "subset": 0,
+      "zero_rows": 0
+    },
+    "nct": {
+      "all_finite": true,
+      "duplicate_embeddings": 0,
+      "duplicate_image_files": 0,
+      "index_hash_ok": true,
+      "keys": {
+        "cls": [
+          100000,
+          768
+        ],
+        "official": [
+          100000,
+          512
+        ],
+        "patch_mean": [
+          100000,
+          768
+        ]
+      },
+      "n_index": 100000,
+      "ok": true,
+      "recompute_max_abs_diff": 9.5367431640625e-07,
+      "recompute_rel_diff": 2.667962348823494e-07,
+      "rows_complete_and_ordered": true,
+      "subset": 0,
+      "zero_rows": 0
+    },
+    "nct_val7k": {
+      "all_finite": true,
+      "duplicate_embeddings": 0,
+      "duplicate_image_files": 0,
+      "index_hash_ok": true,
+      "keys": {
+        "cls": [
+          7180,
+          768
+        ],
+        "official": [
+          7180,
+          512
+        ],
+        "patch_mean": [
+          7180,
+          768
+        ]
+      },
+      "n_index": 7180,
+      "ok": true,
+      "recompute_max_abs_diff": 9.5367431640625e-07,
+      "recompute_rel_diff": 2.6474040737411997e-07,
+      "rows_complete_and_ordered": true,
+      "subset": 0,
+      "zero_rows": 0
+    },
+    "panda": {
+      "all_finite": true,
+      "duplicate_embeddings": 186848,
+      "duplicate_image_files": 186850,
+      "index_hash_ok": true,
+      "keys": {
+        "cls": [
+          525862,
+          768
+        ],
+        "official": [
+          525862,
+          512
+        ],
+        "patch_mean": [
+          525862,
+          768
+        ]
+      },
+      "n_index": 525862,
+      "ok": true,
+      "recompute_max_abs_diff": 1.1920928955078125e-06,
+      "recompute_rel_diff": 3.357997400144086e-07,
+      "rows_complete_and_ordered": true,
+      "subset": 0,
+      "zero_rows": 0
+    },
+    "sicap": {
+      "all_finite": true,
+      "duplicate_embeddings": 0,
+      "duplicate_image_files": 0,
+      "index_hash_ok": true,
+      "keys": {
+        "cls": [
+          12081,
+          768
+        ],
+        "official": [
+          12081,
+          512
+        ],
+        "patch_mean": [
+          12081,
+          768
+        ]
+      },
+      "n_index": 12081,
+      "ok": true,
+      "recompute_max_abs_diff": 9.5367431640625e-07,
+      "recompute_rel_diff": 2.8084880909773347e-07,
+      "rows_complete_and_ordered": true,
+      "subset": 0,
+      "zero_rows": 0
+    }
+  },
+  "ctranspath": {
+    "bach": {
+      "all_finite": true,
+      "duplicate_embeddings": 0,
+      "duplicate_image_files": 0,
+      "index_hash_ok": true,
+      "keys": {
+        "official": [
+          19051,
+          768
+        ]
+      },
+      "n_index": 19051,
+      "ok": true,
+      "recompute_max_abs_diff": 2.980232238769531e-07,
+      "recompute_rel_diff": 2.428315042379836e-07,
+      "rows_complete_and_ordered": true,
+      "subset": 0,
+      "zero_rows": 0
+    },
+    "bracs": {
+      "all_finite": true,
+      "duplicate_embeddings": 0,
+      "duplicate_image_files": 0,
+      "index_hash_ok": true,
+      "keys": {
+        "official": [
+          4539,
+          768
+        ]
+      },
+      "n_index": 4539,
+      "ok": true,
+      "recompute_max_abs_diff": 2.384185791015625e-07,
+      "recompute_rel_diff": 1.2960663298144937e-07,
+      "rows_complete_and_ordered": true,
+      "subset": 0,
+      "zero_rows": 0
+    },
+    "breakhis": {
+      "all_finite": true,
+      "duplicate_embeddings": 45,
+      "duplicate_image_files": 125,
+      "index_hash_ok": true,
+      "keys": {
+        "official": [
+          7909,
+          768
+        ]
+      },
+      "n_index": 7909,
+      "ok": true,
+      "recompute_max_abs_diff": 2.682209014892578e-07,
+      "recompute_rel_diff": 1.8067109408548276e-07,
+      "rows_complete_and_ordered": true,
+      "subset": 0,
+      "zero_rows": 0
+    },
+    "hubmap": {
+      "all_finite": true,
+      "duplicate_embeddings": 19,
+      "duplicate_image_files": 21,
+      "index_hash_ok": true,
+      "keys": {
+        "official": [
+          29401,
+          768
+        ]
+      },
+      "n_index": 29401,
+      "ok": true,
+      "recompute_max_abs_diff": 2.384185791015625e-07,
+      "recompute_rel_diff": 1.4234591105832806e-07,
+      "rows_complete_and_ordered": true,
+      "subset": 0,
+      "zero_rows": 0
+    },
+    "lung": {
+      "all_finite": true,
+      "duplicate_embeddings": 186,
+      "duplicate_image_files": 463,
+      "index_hash_ok": true,
+      "keys": {
+        "official": [
+          9001,
+          768
+        ]
+      },
+      "n_index": 9001,
+      "ok": true,
+      "recompute_max_abs_diff": 3.5762786865234375e-07,
+      "recompute_rel_diff": 3.6360796684675734e-07,
+      "rows_complete_and_ordered": true,
+      "subset": 0,
+      "zero_rows": 0
+    },
+    "nct": {
+      "all_finite": true,
+      "duplicate_embeddings": 0,
+      "duplicate_image_files": 0,
+      "index_hash_ok": true,
+      "keys": {
+        "official": [
+          100000,
+          768
+        ]
+      },
+      "n_index": 100000,
+      "ok": true,
+      "recompute_max_abs_diff": 2.980232238769531e-07,
+      "recompute_rel_diff": 2.0612246487416996e-07,
+      "rows_complete_and_ordered": true,
+      "subset": 0,
+      "zero_rows": 0
+    },
+    "nct_val7k": {
+      "all_finite": true,
+      "duplicate_embeddings": 0,
+      "duplicate_image_files": 0,
+      "index_hash_ok": true,
+      "keys": {
+        "official": [
+          7180,
+          768
+        ]
+      },
+      "n_index": 7180,
+      "ok": true,
+      "recompute_max_abs_diff": 3.5762786865234375e-07,
+      "recompute_rel_diff": 3.636602912138187e-07,
+      "rows_complete_and_ordered": true,
+      "subset": 0,
+      "zero_rows": 0
+    },
+    "panda": {
+      "all_finite": true,
+      "duplicate_embeddings": 186138,
+      "duplicate_image_files": 186850,
+      "index_hash_ok": true,
+      "keys": {
+        "official": [
+          525862,
+          768
+        ]
+      },
+      "n_index": 525862,
+      "ok": true,
+      "recompute_max_abs_diff": 5.066394805908203e-07,
+      "recompute_rel_diff": 4.5892295474914135e-07,
+      "rows_complete_and_ordered": true,
+      "subset": 0,
+      "zero_rows": 0
+    },
+    "sicap": {
+      "all_finite": true,
+      "duplicate_embeddings": 0,
+      "duplicate_image_files": 0,
+      "index_hash_ok": true,
+      "keys": {
+        "official": [
+          12081,
+          768
+        ]
+      },
+      "n_index": 12081,
+      "ok": true,
+      "recompute_max_abs_diff": 1.7881393432617188e-07,
+      "recompute_rel_diff": 1.3488329386746045e-07,
+      "rows_complete_and_ordered": true,
+      "subset": 0,
+      "zero_rows": 0
+    }
+  },
+  "gigapath": {
+    "bach": {
+      "all_finite": true,
+      "duplicate_embeddings": 0,
+      "duplicate_image_files": 0,
+      "index_hash_ok": true,
+      "keys": {
+        "cls": [
+          19051,
+          1536
+        ],
+        "official": [
+          19051,
+          1536
+        ],
+        "patch_mean": [
+          19051,
+          1536
+        ]
+      },
+      "n_index": 19051,
+      "ok": true,
+      "recompute_max_abs_diff": 0.0,
+      "recompute_rel_diff": 0.0,
+      "rows_complete_and_ordered": true,
+      "subset": 0,
+      "zero_rows": 0
+    },
+    "bracs": {
+      "all_finite": true,
+      "duplicate_embeddings": 0,
+      "duplicate_image_files": 0,
+      "index_hash_ok": true,
+      "keys": {
+        "cls": [
+          4539,
+          1536
+        ],
+        "official": [
+          4539,
+          1536
+        ],
+        "patch_mean": [
+          4539,
+          1536
+        ]
+      },
+      "n_index": 4539,
+      "ok": true,
+      "recompute_max_abs_diff": 0.0,
+      "recompute_rel_diff": 0.0,
+      "rows_complete_and_ordered": true,
+      "subset": 0,
+      "zero_rows": 0
+    },
+    "breakhis": {
+      "all_finite": true,
+      "duplicate_embeddings": 125,
+      "duplicate_image_files": 125,
+      "index_hash_ok": true,
+      "keys": {
+        "cls": [
+          7909,
+          1536
+        ],
+        "official": [
+          7909,
+          1536
+        ],
+        "patch_mean": [
+          7909,
+          1536
+        ]
+      },
+      "n_index": 7909,
+      "ok": true,
+      "recompute_max_abs_diff": 0.0,
+      "recompute_rel_diff": 0.0,
+      "rows_complete_and_ordered": true,
+      "subset": 0,
+      "zero_rows": 0
+    },
+    "hubmap": {
+      "all_finite": true,
+      "duplicate_embeddings": 21,
+      "duplicate_image_files": 21,
+      "index_hash_ok": true,
+      "keys": {
+        "cls": [
+          29401,
+          1536
+        ],
+        "official": [
+          29401,
+          1536
+        ],
+        "patch_mean": [
+          29401,
+          1536
+        ]
+      },
+      "n_index": 29401,
+      "ok": true,
+      "recompute_max_abs_diff": 0.0,
+      "recompute_rel_diff": 0.0,
+      "rows_complete_and_ordered": true,
+      "subset": 0,
+      "zero_rows": 0
+    },
+    "lung": {
+      "all_finite": true,
+      "duplicate_embeddings": 463,
+      "duplicate_image_files": 463,
+      "index_hash_ok": true,
+      "keys": {
+        "cls": [
+          9001,
+          1536
+        ],
+        "official": [
+          9001,
+          1536
+        ],
+        "patch_mean": [
+          9001,
+          1536
+        ]
+      },
+      "n_index": 9001,
+      "ok": true,
+      "recompute_max_abs_diff": 0.0,
+      "recompute_rel_diff": 0.0,
+      "rows_complete_and_ordered": true,
+      "subset": 0,
+      "zero_rows": 0
+    },
+    "nct": {
+      "all_finite": true,
+      "duplicate_embeddings": 0,
+      "duplicate_image_files": 0,
+      "index_hash_ok": true,
+      "keys": {
+        "cls": [
+          100000,
+          1536
+        ],
+        "official": [
+          100000,
+          1536
+        ],
+        "patch_mean": [
+          100000,
+          1536
+        ]
+      },
+      "n_index": 100000,
+      "ok": true,
+      "recompute_max_abs_diff": 0.0,
+      "recompute_rel_diff": 0.0,
+      "rows_complete_and_ordered": true,
+      "subset": 0,
+      "zero_rows": 0
+    },
+    "nct_val7k": {
+      "all_finite": true,
+      "duplicate_embeddings": 0,
+      "duplicate_image_files": 0,
+      "index_hash_ok": true,
+      "keys": {
+        "cls": [
+          7180,
+          1536
+        ],
+        "official": [
+          7180,
+          1536
+        ],
+        "patch_mean": [
+          7180,
+          1536
+        ]
+      },
+      "n_index": 7180,
+      "ok": true,
+      "recompute_max_abs_diff": 0.0,
+      "recompute_rel_diff": 0.0,
+      "rows_complete_and_ordered": true,
+      "subset": 0,
+      "zero_rows": 0
+    },
+    "panda": {
+      "all_finite": true,
+      "duplicate_embeddings": 189808,
+      "duplicate_image_files": 186850,
+      "index_hash_ok": true,
+      "keys": {
+        "cls": [
+          525862,
+          1536
+        ],
+        "official": [
+          525862,
+          1536
+        ],
+        "patch_mean": [
+          525862,
+          1536
+        ]
+      },
+      "n_index": 525862,
+      "ok": true,
+      "recompute_max_abs_diff": 0.0,
+      "recompute_rel_diff": 0.0,
+      "rows_complete_and_ordered": true,
+      "subset": 0,
+      "zero_rows": 0
+    },
+    "sicap": {
+      "all_finite": true,
+      "duplicate_embeddings": 0,
+      "duplicate_image_files": 0,
+      "index_hash_ok": true,
+      "keys": {
+        "cls": [
+          12081,
+          1536
+        ],
+        "official": [
+          12081,
+          1536
+        ],
+        "patch_mean": [
+          12081,
+          1536
+        ]
+      },
+      "n_index": 12081,
+      "ok": true,
+      "recompute_max_abs_diff": 0.0,
+      "recompute_rel_diff": 0.0,
+      "rows_complete_and_ordered": true,
+      "subset": 0,
+      "zero_rows": 0
+    }
+  },
+  "hoptimus0": {
+    "bach": {
+      "all_finite": true,
+      "duplicate_embeddings": 0,
+      "duplicate_image_files": 0,
+      "index_hash_ok": true,
+      "keys": {
+        "cls": [
+          19051,
+          1536
+        ],
+        "official": [
+          19051,
+          1536
+        ],
+        "patch_mean": [
+          19051,
+          1536
+        ]
+      },
+      "n_index": 19051,
+      "ok": true,
+      "recompute_max_abs_diff": 0.0,
+      "recompute_rel_diff": 0.0,
+      "rows_complete_and_ordered": true,
+      "subset": 0,
+      "zero_rows": 0
+    },
+    "bracs": {
+      "all_finite": true,
+      "duplicate_embeddings": 0,
+      "duplicate_image_files": 0,
+      "index_hash_ok": true,
+      "keys": {
+        "cls": [
+          4539,
+          1536
+        ],
+        "official": [
+          4539,
+          1536
+        ],
+        "patch_mean": [
+          4539,
+          1536
+        ]
+      },
+      "n_index": 4539,
+      "ok": true,
+      "recompute_max_abs_diff": 0.0,
+      "recompute_rel_diff": 0.0,
+      "rows_complete_and_ordered": true,
+      "subset": 0,
+      "zero_rows": 0
+    },
+    "breakhis": {
+      "all_finite": true,
+      "duplicate_embeddings": 125,
+      "duplicate_image_files": 125,
+      "index_hash_ok": true,
+      "keys": {
+        "cls": [
+          7909,
+          1536
+        ],
+        "official": [
+          7909,
+          1536
+        ],
+        "patch_mean": [
+          7909,
+          1536
+        ]
+      },
+      "n_index": 7909,
+      "ok": true,
+      "recompute_max_abs_diff": 0.0,
+      "recompute_rel_diff": 0.0,
+      "rows_complete_and_ordered": true,
+      "subset": 0,
+      "zero_rows": 0
+    },
+    "hubmap": {
+      "all_finite": true,
+      "duplicate_embeddings": 21,
+      "duplicate_image_files": 21,
+      "index_hash_ok": true,
+      "keys": {
+        "cls": [
+          29401,
+          1536
+        ],
+        "official": [
+          29401,
+          1536
+        ],
+        "patch_mean": [
+          29401,
+          1536
+        ]
+      },
+      "n_index": 29401,
+      "ok": true,
+      "recompute_max_abs_diff": 0.0,
+      "recompute_rel_diff": 0.0,
+      "rows_complete_and_ordered": true,
+      "subset": 0,
+      "zero_rows": 0
+    },
+    "lung": {
+      "all_finite": true,
+      "duplicate_embeddings": 463,
+      "duplicate_image_files": 463,
+      "index_hash_ok": true,
+      "keys": {
+        "cls": [
+          9001,
+          1536
+        ],
+        "official": [
+          9001,
+          1536
+        ],
+        "patch_mean": [
+          9001,
+          1536
+        ]
+      },
+      "n_index": 9001,
+      "ok": true,
+      "recompute_max_abs_diff": 0.0,
+      "recompute_rel_diff": 0.0,
+      "rows_complete_and_ordered": true,
+      "subset": 0,
+      "zero_rows": 0
+    },
+    "nct": {
+      "all_finite": true,
+      "duplicate_embeddings": 0,
+      "duplicate_image_files": 0,
+      "index_hash_ok": true,
+      "keys": {
+        "cls": [
+          100000,
+          1536
+        ],
+        "official": [
+          100000,
+          1536
+        ],
+        "patch_mean": [
+          100000,
+          1536
+        ]
+      },
+      "n_index": 100000,
+      "ok": true,
+      "recompute_max_abs_diff": 0.0,
+      "recompute_rel_diff": 0.0,
+      "rows_complete_and_ordered": true,
+      "subset": 0,
+      "zero_rows": 0
+    },
+    "nct_val7k": {
+      "all_finite": true,
+      "duplicate_embeddings": 0,
+      "duplicate_image_files": 0,
+      "index_hash_ok": true,
+      "keys": {
+        "cls": [
+          7180,
+          1536
+        ],
+        "official": [
+          7180,
+          1536
+        ],
+        "patch_mean": [
+          7180,
+          1536
+        ]
+      },
+      "n_index": 7180,
+      "ok": true,
+      "recompute_max_abs_diff": 0.0,
+      "recompute_rel_diff": 0.0,
+      "rows_complete_and_ordered": true,
+      "subset": 0,
+      "zero_rows": 0
+    },
+    "panda": {
+      "all_finite": true,
+      "duplicate_embeddings": 186850,
+      "duplicate_image_files": 186850,
+      "index_hash_ok": true,
+      "keys": {
+        "cls": [
+          525862,
+          1536
+        ],
+        "official": [
+          525862,
+          1536
+        ],
+        "patch_mean": [
+          525862,
+          1536
+        ]
+      },
+      "n_index": 525862,
+      "ok": true,
+      "recompute_max_abs_diff": 0.0,
+      "recompute_rel_diff": 0.0,
+      "rows_complete_and_ordered": true,
+      "subset": 0,
+      "zero_rows": 0
+    },
+    "sicap": {
+      "all_finite": true,
+      "duplicate_embeddings": 0,
+      "duplicate_image_files": 0,
+      "index_hash_ok": true,
+      "keys": {
+        "cls": [
+          12081,
+          1536
+        ],
+        "official": [
+          12081,
+          1536
+        ],
+        "patch_mean": [
+          12081,
+          1536
+        ]
+      },
+      "n_index": 12081,
+      "ok": true,
+      "recompute_max_abs_diff": 0.0,
+      "recompute_rel_diff": 0.0,
+      "rows_complete_and_ordered": true,
+      "subset": 0,
+      "zero_rows": 0
+    }
+  },
+  "phikon": {
+    "bach": {
+      "all_finite": true,
+      "duplicate_embeddings": 0,
+      "duplicate_image_files": 0,
+      "index_hash_ok": true,
+      "keys": {
+        "cls": [
+          19051,
+          768
+        ],
+        "official": [
+          19051,
+          768
+        ],
+        "patch_mean": [
+          19051,
+          768
+        ]
+      },
+      "n_index": 19051,
+      "ok": true,
+      "recompute_max_abs_diff": 0.0,
+      "recompute_rel_diff": 0.0,
+      "rows_complete_and_ordered": true,
+      "subset": 0,
+      "zero_rows": 0
+    },
+    "bracs": {
+      "all_finite": true,
+      "duplicate_embeddings": 0,
+      "duplicate_image_files": 0,
+      "index_hash_ok": true,
+      "keys": {
+        "cls": [
+          4539,
+          768
+        ],
+        "official": [
+          4539,
+          768
+        ],
+        "patch_mean": [
+          4539,
+          768
+        ]
+      },
+      "n_index": 4539,
+      "ok": true,
+      "recompute_max_abs_diff": 0.0,
+      "recompute_rel_diff": 0.0,
+      "rows_complete_and_ordered": true,
+      "subset": 0,
+      "zero_rows": 0
+    },
+    "breakhis": {
+      "all_finite": true,
+      "duplicate_embeddings": 125,
+      "duplicate_image_files": 125,
+      "index_hash_ok": true,
+      "keys": {
+        "cls": [
+          7909,
+          768
+        ],
+        "official": [
+          7909,
+          768
+        ],
+        "patch_mean": [
+          7909,
+          768
+        ]
+      },
+      "n_index": 7909,
+      "ok": true,
+      "recompute_max_abs_diff": 0.0,
+      "recompute_rel_diff": 0.0,
+      "rows_complete_and_ordered": true,
+      "subset": 0,
+      "zero_rows": 0
+    },
+    "hubmap": {
+      "all_finite": true,
+      "duplicate_embeddings": 21,
+      "duplicate_image_files": 21,
+      "index_hash_ok": true,
+      "keys": {
+        "cls": [
+          29401,
+          768
+        ],
+        "official": [
+          29401,
+          768
+        ],
+        "patch_mean": [
+          29401,
+          768
+        ]
+      },
+      "n_index": 29401,
+      "ok": true,
+      "recompute_max_abs_diff": 0.0,
+      "recompute_rel_diff": 0.0,
+      "rows_complete_and_ordered": true,
+      "subset": 0,
+      "zero_rows": 0
+    },
+    "lung": {
+      "all_finite": true,
+      "duplicate_embeddings": 463,
+      "duplicate_image_files": 463,
+      "index_hash_ok": true,
+      "keys": {
+        "cls": [
+          9001,
+          768
+        ],
+        "official": [
+          9001,
+          768
+        ],
+        "patch_mean": [
+          9001,
+          768
+        ]
+      },
+      "n_index": 9001,
+      "ok": true,
+      "recompute_max_abs_diff": 0.0,
+      "recompute_rel_diff": 0.0,
+      "rows_complete_and_ordered": true,
+      "subset": 0,
+      "zero_rows": 0
+    },
+    "nct": {
+      "all_finite": true,
+      "duplicate_embeddings": 0,
+      "duplicate_image_files": 0,
+      "index_hash_ok": true,
+      "keys": {
+        "cls": [
+          100000,
+          768
+        ],
+        "official": [
+          100000,
+          768
+        ],
+        "patch_mean": [
+          100000,
+          768
+        ]
+      },
+      "n_index": 100000,
+      "ok": true,
+      "recompute_max_abs_diff": 0.0,
+      "recompute_rel_diff": 0.0,
+      "rows_complete_and_ordered": true,
+      "subset": 0,
+      "zero_rows": 0
+    },
+    "nct_val7k": {
+      "all_finite": true,
+      "duplicate_embeddings": 0,
+      "duplicate_image_files": 0,
+      "index_hash_ok": true,
+      "keys": {
+        "cls": [
+          7180,
+          768
+        ],
+        "official": [
+          7180,
+          768
+        ],
+        "patch_mean": [
+          7180,
+          768
+        ]
+      },
+      "n_index": 7180,
+      "ok": true,
+      "recompute_max_abs_diff": 0.0,
+      "recompute_rel_diff": 0.0,
+      "rows_complete_and_ordered": true,
+      "subset": 0,
+      "zero_rows": 0
+    },
+    "panda": {
+      "all_finite": true,
+      "duplicate_embeddings": 186850,
+      "duplicate_image_files": 186850,
+      "index_hash_ok": true,
+      "keys": {
+        "cls": [
+          525862,
+          768
+        ],
+        "official": [
+          525862,
+          768
+        ],
+        "patch_mean": [
+          525862,
+          768
+        ]
+      },
+      "n_index": 525862,
+      "ok": true,
+      "recompute_max_abs_diff": 0.0,
+      "recompute_rel_diff": 0.0,
+      "rows_complete_and_ordered": true,
+      "subset": 0,
+      "zero_rows": 0
+    },
+    "sicap": {
+      "all_finite": true,
+      "duplicate_embeddings": 0,
+      "duplicate_image_files": 0,
+      "index_hash_ok": true,
+      "keys": {
+        "cls": [
+          12081,
+          768
+        ],
+        "official": [
+          12081,
+          768
+        ],
+        "patch_mean": [
+          12081,
+          768
+        ]
+      },
+      "n_index": 12081,
+      "ok": true,
+      "recompute_max_abs_diff": 0.0,
+      "recompute_rel_diff": 0.0,
+      "rows_complete_and_ordered": true,
+      "subset": 0,
+      "zero_rows": 0
+    }
+  },
+  "uni2h": {
+    "bach": {
+      "all_finite": true,
+      "duplicate_embeddings": 0,
+      "duplicate_image_files": 0,
+      "index_hash_ok": true,
+      "keys": {
+        "cls": [
+          19051,
+          1536
+        ],
+        "official": [
+          19051,
+          1536
+        ],
+        "patch_mean": [
+          19051,
+          1536
+        ]
+      },
+      "n_index": 19051,
+      "ok": true,
+      "recompute_max_abs_diff": 0.0,
+      "recompute_rel_diff": 0.0,
+      "rows_complete_and_ordered": true,
+      "subset": 0,
+      "zero_rows": 0
+    },
+    "bracs": {
+      "all_finite": true,
+      "duplicate_embeddings": 0,
+      "duplicate_image_files": 0,
+      "index_hash_ok": true,
+      "keys": {
+        "cls": [
+          4539,
+          1536
+        ],
+        "official": [
+          4539,
+          1536
+        ],
+        "patch_mean": [
+          4539,
+          1536
+        ]
+      },
+      "n_index": 4539,
+      "ok": true,
+      "recompute_max_abs_diff": 0.0,
+      "recompute_rel_diff": 0.0,
+      "rows_complete_and_ordered": true,
+      "subset": 0,
+      "zero_rows": 0
+    },
+    "breakhis": {
+      "all_finite": true,
+      "duplicate_embeddings": 125,
+      "duplicate_image_files": 125,
+      "index_hash_ok": true,
+      "keys": {
+        "cls": [
+          7909,
+          1536
+        ],
+        "official": [
+          7909,
+          1536
+        ],
+        "patch_mean": [
+          7909,
+          1536
+        ]
+      },
+      "n_index": 7909,
+      "ok": true,
+      "recompute_max_abs_diff": 0.0,
+      "recompute_rel_diff": 0.0,
+      "rows_complete_and_ordered": true,
+      "subset": 0,
+      "zero_rows": 0
+    },
+    "hubmap": {
+      "all_finite": true,
+      "duplicate_embeddings": 21,
+      "duplicate_image_files": 21,
+      "index_hash_ok": true,
+      "keys": {
+        "cls": [
+          29401,
+          1536
+        ],
+        "official": [
+          29401,
+          1536
+        ],
+        "patch_mean": [
+          29401,
+          1536
+        ]
+      },
+      "n_index": 29401,
+      "ok": true,
+      "recompute_max_abs_diff": 0.0,
+      "recompute_rel_diff": 0.0,
+      "rows_complete_and_ordered": true,
+      "subset": 0,
+      "zero_rows": 0
+    },
+    "lung": {
+      "all_finite": true,
+      "duplicate_embeddings": 463,
+      "duplicate_image_files": 463,
+      "index_hash_ok": true,
+      "keys": {
+        "cls": [
+          9001,
+          1536
+        ],
+        "official": [
+          9001,
+          1536
+        ],
+        "patch_mean": [
+          9001,
+          1536
+        ]
+      },
+      "n_index": 9001,
+      "ok": true,
+      "recompute_max_abs_diff": 0.0,
+      "recompute_rel_diff": 0.0,
+      "rows_complete_and_ordered": true,
+      "subset": 0,
+      "zero_rows": 0
+    },
+    "nct": {
+      "all_finite": true,
+      "duplicate_embeddings": 0,
+      "duplicate_image_files": 0,
+      "index_hash_ok": true,
+      "keys": {
+        "cls": [
+          100000,
+          1536
+        ],
+        "official": [
+          100000,
+          1536
+        ],
+        "patch_mean": [
+          100000,
+          1536
+        ]
+      },
+      "n_index": 100000,
+      "ok": true,
+      "recompute_max_abs_diff": 0.0,
+      "recompute_rel_diff": 0.0,
+      "rows_complete_and_ordered": true,
+      "subset": 0,
+      "zero_rows": 0
+    },
+    "nct_val7k": {
+      "all_finite": true,
+      "duplicate_embeddings": 0,
+      "duplicate_image_files": 0,
+      "index_hash_ok": true,
+      "keys": {
+        "cls": [
+          7180,
+          1536
+        ],
+        "official": [
+          7180,
+          1536
+        ],
+        "patch_mean": [
+          7180,
+          1536
+        ]
+      },
+      "n_index": 7180,
+      "ok": true,
+      "recompute_max_abs_diff": 0.0,
+      "recompute_rel_diff": 0.0,
+      "rows_complete_and_ordered": true,
+      "subset": 0,
+      "zero_rows": 0
+    },
+    "panda": {
+      "all_finite": true,
+      "duplicate_embeddings": 186850,
+      "duplicate_image_files": 186850,
+      "index_hash_ok": true,
+      "keys": {
+        "cls": [
+          525862,
+          1536
+        ],
+        "official": [
+          525862,
+          1536
+        ],
+        "patch_mean": [
+          525862,
+          1536
+        ]
+      },
+      "n_index": 525862,
+      "ok": true,
+      "recompute_max_abs_diff": 0.0,
+      "recompute_rel_diff": 0.0,
+      "rows_complete_and_ordered": true,
+      "subset": 0,
+      "zero_rows": 0
+    },
+    "sicap": {
+      "all_finite": true,
+      "duplicate_embeddings": 0,
+      "duplicate_image_files": 0,
+      "index_hash_ok": true,
+      "keys": {
+        "cls": [
+          12081,
+          1536
+        ],
+        "official": [
+          12081,
+          1536
+        ],
+        "patch_mean": [
+          12081,
+          1536
+        ]
+      },
+      "n_index": 12081,
+      "ok": true,
+      "recompute_max_abs_diff": 0.0,
+      "recompute_rel_diff": 0.0,
+      "rows_complete_and_ordered": true,
+      "subset": 0,
+      "zero_rows": 0
+    }
+  },
+  "virchow2": {
+    "bach": {
+      "all_finite": true,
+      "duplicate_embeddings": 0,
+      "duplicate_image_files": 0,
+      "index_hash_ok": true,
+      "keys": {
+        "cls": [
+          19051,
+          1280
+        ],
+        "official": [
+          19051,
+          2560
+        ],
+        "patch_mean": [
+          19051,
+          1280
+        ]
+      },
+      "n_index": 19051,
+      "ok": true,
+      "recompute_max_abs_diff": 0.0,
+      "recompute_rel_diff": 0.0,
+      "rows_complete_and_ordered": true,
+      "subset": 0,
+      "zero_rows": 0
+    },
+    "bracs": {
+      "all_finite": true,
+      "duplicate_embeddings": 0,
+      "duplicate_image_files": 0,
+      "index_hash_ok": true,
+      "keys": {
+        "cls": [
+          4539,
+          1280
+        ],
+        "official": [
+          4539,
+          2560
+        ],
+        "patch_mean": [
+          4539,
+          1280
+        ]
+      },
+      "n_index": 4539,
+      "ok": true,
+      "recompute_max_abs_diff": 0.0,
+      "recompute_rel_diff": 0.0,
+      "rows_complete_and_ordered": true,
+      "subset": 0,
+      "zero_rows": 0
+    },
+    "breakhis": {
+      "all_finite": true,
+      "duplicate_embeddings": 125,
+      "duplicate_image_files": 125,
+      "index_hash_ok": true,
+      "keys": {
+        "cls": [
+          7909,
+          1280
+        ],
+        "official": [
+          7909,
+          2560
+        ],
+        "patch_mean": [
+          7909,
+          1280
+        ]
+      },
+      "n_index": 7909,
+      "ok": true,
+      "recompute_max_abs_diff": 0.0,
+      "recompute_rel_diff": 0.0,
+      "rows_complete_and_ordered": true,
+      "subset": 0,
+      "zero_rows": 0
+    },
+    "hubmap": {
+      "all_finite": true,
+      "duplicate_embeddings": 21,
+      "duplicate_image_files": 21,
+      "index_hash_ok": true,
+      "keys": {
+        "cls": [
+          29401,
+          1280
+        ],
+        "official": [
+          29401,
+          2560
+        ],
+        "patch_mean": [
+          29401,
+          1280
+        ]
+      },
+      "n_index": 29401,
+      "ok": true,
+      "recompute_max_abs_diff": 0.0,
+      "recompute_rel_diff": 0.0,
+      "rows_complete_and_ordered": true,
+      "subset": 0,
+      "zero_rows": 0
+    },
+    "lung": {
+      "all_finite": true,
+      "duplicate_embeddings": 463,
+      "duplicate_image_files": 463,
+      "index_hash_ok": true,
+      "keys": {
+        "cls": [
+          9001,
+          1280
+        ],
+        "official": [
+          9001,
+          2560
+        ],
+        "patch_mean": [
+          9001,
+          1280
+        ]
+      },
+      "n_index": 9001,
+      "ok": true,
+      "recompute_max_abs_diff": 0.0,
+      "recompute_rel_diff": 0.0,
+      "rows_complete_and_ordered": true,
+      "subset": 0,
+      "zero_rows": 0
+    },
+    "nct": {
+      "all_finite": true,
+      "duplicate_embeddings": 0,
+      "duplicate_image_files": 0,
+      "index_hash_ok": true,
+      "keys": {
+        "cls": [
+          100000,
+          1280
+        ],
+        "official": [
+          100000,
+          2560
+        ],
+        "patch_mean": [
+          100000,
+          1280
+        ]
+      },
+      "n_index": 100000,
+      "ok": true,
+      "recompute_max_abs_diff": 0.0,
+      "recompute_rel_diff": 0.0,
+      "rows_complete_and_ordered": true,
+      "subset": 0,
+      "zero_rows": 0
+    },
+    "nct_val7k": {
+      "all_finite": true,
+      "duplicate_embeddings": 0,
+      "duplicate_image_files": 0,
+      "index_hash_ok": true,
+      "keys": {
+        "cls": [
+          7180,
+          1280
+        ],
+        "official": [
+          7180,
+          2560
+        ],
+        "patch_mean": [
+          7180,
+          1280
+        ]
+      },
+      "n_index": 7180,
+      "ok": true,
+      "recompute_max_abs_diff": 0.0,
+      "recompute_rel_diff": 0.0,
+      "rows_complete_and_ordered": true,
+      "subset": 0,
+      "zero_rows": 0
+    },
+    "panda": {
+      "all_finite": true,
+      "duplicate_embeddings": 186850,
+      "duplicate_image_files": 186850,
+      "index_hash_ok": true,
+      "keys": {
+        "cls": [
+          525862,
+          1280
+        ],
+        "official": [
+          525862,
+          2560
+        ],
+        "patch_mean": [
+          525862,
+          1280
+        ]
+      },
+      "n_index": 525862,
+      "ok": true,
+      "recompute_max_abs_diff": 0.0,
+      "recompute_rel_diff": 0.0,
+      "rows_complete_and_ordered": true,
+      "subset": 0,
+      "zero_rows": 0
+    },
+    "sicap": {
+      "all_finite": true,
+      "duplicate_embeddings": 0,
+      "duplicate_image_files": 0,
+      "index_hash_ok": true,
+      "keys": {
+        "cls": [
+          12081,
+          1280
+        ],
+        "official": [
+          12081,
+          2560
+        ],
+        "patch_mean": [
+          12081,
+          1280
+        ]
+      },
+      "n_index": 12081,
+      "ok": true,
+      "recompute_max_abs_diff": 0.0,
+      "recompute_rel_diff": 0.0,
+      "rows_complete_and_ordered": true,
+      "subset": 0,
+      "zero_rows": 0
+    }
+  },
+  "vit_in1k": {
+    "bach": {
+      "all_finite": true,
+      "duplicate_embeddings": 0,
+      "duplicate_image_files": 0,
+      "index_hash_ok": true,
+      "keys": {
+        "cls": [
+          19051,
+          768
+        ],
+        "official": [
+          19051,
+          768
+        ],
+        "patch_mean": [
+          19051,
+          768
+        ]
+      },
+      "n_index": 19051,
+      "ok": true,
+      "recompute_max_abs_diff": 0.0,
+      "recompute_rel_diff": 0.0,
+      "rows_complete_and_ordered": true,
+      "subset": 0,
+      "zero_rows": 0
+    },
+    "bracs": {
+      "all_finite": true,
+      "duplicate_embeddings": 0,
+      "duplicate_image_files": 0,
+      "index_hash_ok": true,
+      "keys": {
+        "cls": [
+          4539,
+          768
+        ],
+        "official": [
+          4539,
+          768
+        ],
+        "patch_mean": [
+          4539,
+          768
+        ]
+      },
+      "n_index": 4539,
+      "ok": true,
+      "recompute_max_abs_diff": 0.0,
+      "recompute_rel_diff": 0.0,
+      "rows_complete_and_ordered": true,
+      "subset": 0,
+      "zero_rows": 0
+    },
+    "breakhis": {
+      "all_finite": true,
+      "duplicate_embeddings": 125,
+      "duplicate_image_files": 125,
+      "index_hash_ok": true,
+      "keys": {
+        "cls": [
+          7909,
+          768
+        ],
+        "official": [
+          7909,
+          768
+        ],
+        "patch_mean": [
+          7909,
+          768
+        ]
+      },
+      "n_index": 7909,
+      "ok": true,
+      "recompute_max_abs_diff": 0.0,
+      "recompute_rel_diff": 0.0,
+      "rows_complete_and_ordered": true,
+      "subset": 0,
+      "zero_rows": 0
+    },
+    "hubmap": {
+      "all_finite": true,
+      "duplicate_embeddings": 21,
+      "duplicate_image_files": 21,
+      "index_hash_ok": true,
+      "keys": {
+        "cls": [
+          29401,
+          768
+        ],
+        "official": [
+          29401,
+          768
+        ],
+        "patch_mean": [
+          29401,
+          768
+        ]
+      },
+      "n_index": 29401,
+      "ok": true,
+      "recompute_max_abs_diff": 0.0,
+      "recompute_rel_diff": 0.0,
+      "rows_complete_and_ordered": true,
+      "subset": 0,
+      "zero_rows": 0
+    },
+    "lung": {
+      "all_finite": true,
+      "duplicate_embeddings": 463,
+      "duplicate_image_files": 463,
+      "index_hash_ok": true,
+      "keys": {
+        "cls": [
+          9001,
+          768
+        ],
+        "official": [
+          9001,
+          768
+        ],
+        "patch_mean": [
+          9001,
+          768
+        ]
+      },
+      "n_index": 9001,
+      "ok": true,
+      "recompute_max_abs_diff": 0.0,
+      "recompute_rel_diff": 0.0,
+      "rows_complete_and_ordered": true,
+      "subset": 0,
+      "zero_rows": 0
+    },
+    "nct": {
+      "all_finite": true,
+      "duplicate_embeddings": 0,
+      "duplicate_image_files": 0,
+      "index_hash_ok": true,
+      "keys": {
+        "cls": [
+          100000,
+          768
+        ],
+        "official": [
+          100000,
+          768
+        ],
+        "patch_mean": [
+          100000,
+          768
+        ]
+      },
+      "n_index": 100000,
+      "ok": true,
+      "recompute_max_abs_diff": 0.0,
+      "recompute_rel_diff": 0.0,
+      "rows_complete_and_ordered": true,
+      "subset": 0,
+      "zero_rows": 0
+    },
+    "nct_val7k": {
+      "all_finite": true,
+      "duplicate_embeddings": 0,
+      "duplicate_image_files": 0,
+      "index_hash_ok": true,
+      "keys": {
+        "cls": [
+          7180,
+          768
+        ],
+        "official": [
+          7180,
+          768
+        ],
+        "patch_mean": [
+          7180,
+          768
+        ]
+      },
+      "n_index": 7180,
+      "ok": true,
+      "recompute_max_abs_diff": 0.0,
+      "recompute_rel_diff": 0.0,
+      "rows_complete_and_ordered": true,
+      "subset": 0,
+      "zero_rows": 0
+    },
+    "panda": {
+      "all_finite": true,
+      "duplicate_embeddings": 186850,
+      "duplicate_image_files": 186850,
+      "index_hash_ok": true,
+      "keys": {
+        "cls": [
+          525862,
+          768
+        ],
+        "official": [
+          525862,
+          768
+        ],
+        "patch_mean": [
+          525862,
+          768
+        ]
+      },
+      "n_index": 525862,
+      "ok": true,
+      "recompute_max_abs_diff": 0.0,
+      "recompute_rel_diff": 0.0,
+      "rows_complete_and_ordered": true,
+      "subset": 0,
+      "zero_rows": 0
+    },
+    "sicap": {
+      "all_finite": true,
+      "duplicate_embeddings": 0,
+      "duplicate_image_files": 0,
+      "index_hash_ok": true,
+      "keys": {
+        "cls": [
+          12081,
+          768
+        ],
+        "official": [
+          12081,
+          768
+        ],
+        "patch_mean": [
+          12081,
+          768
+        ]
+      },
+      "n_index": 12081,
+      "ok": true,
+      "recompute_max_abs_diff": 0.0,
+      "recompute_rel_diff": 0.0,
+      "rows_complete_and_ordered": true,
+      "subset": 0,
+      "zero_rows": 0
+    }
+  }
+}
