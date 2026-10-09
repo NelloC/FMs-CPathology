@@ -97,7 +97,7 @@ def test_stale_results_are_recomputed():
 
 def test_is_done(tmp_path):
     p = tmp_path / "seed42.json"
-    p.write_text(json.dumps({"filter": {"tissue_min": 0.1}}))  # older result without a signature
+    p.write_text(json.dumps({"filter": {"tissue_min": 0.1}}))  # result without a signature
     assert not probe.is_done(str(p), "abc")
     p.write_text(json.dumps({"data_signature": "abc", "C_grid": probe.C_GRID}))
     assert probe.is_done(str(p), "abc") and not probe.is_done(str(p), "abd")

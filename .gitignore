@@ -6,9 +6,5 @@ results/
 logs/
 generated/
 weights/
-scripts/
-run_*.sh
-*.md
-!README.md
 indexes/*
 !indexes/lc25000_source_groups.csv
